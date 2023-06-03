@@ -1,0 +1,43 @@
+:root {
+  --ff-heading: "Rubik", sans-serif;
+  --ff-text: "Roboto Sans", sans-serif;
+  --fw-heading-400: 400;
+  --fw-heading-500: 500;
+  --fw-text-300: 300;
+  --fw-text-400: 400;
+  --fw-text-500: 500;
+  --fs-300: 3rem;
+  --fs-250: 2rem;
+  --fs-200: 1.6rem;
+  --color-primary-light: #808F87;
+  --color-secondary-light: #F4B266;
+  --color-accent-light: #AFD0BF;
+  --color-bg-1-light: #9B7E46;
+  --color-bg-2-light: #E2EFDE;
+  --color-grey: #333;
+  --color-primary-dark: #36F1CD;
+  --color-secondary-dark: #39A0ED;
+  --color-accent-dark: #13C4A3;
+  --color-bg-1-dark: #4C6085;
+  --color-bg-2-dark: #E2EFDE;
+  --logo-icon: 3.5rem;
+  --border-sm: 1rem;
+  --spacer-sm: 2rem;
+  --spacer-md: 3rem;
+  --spacer-lg: 4rem;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/*# sourceMappingURL=styles.css.map */
