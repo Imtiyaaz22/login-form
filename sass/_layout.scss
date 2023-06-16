@@ -1,0 +1,46 @@
+.wrapper {
+	background: var(--color-neutral);
+	height: 80vh;
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--border-300);
+	box-shadow: 4.5rem 4rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.caption {
+	width: 30%;
+}
+
+.details {
+	width: 65%;
+	height: 95%;
+	background: var(--color-background);
+	border-radius: var(--border-300);
+	display: grid;
+	grid-template-columns: 6rem auto 6rem;
+	grid-template-rows: 5rem 12rem 8rem 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.theme {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.account {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.login {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.form {
+  grid-column: 2 / 3;
+  grid-row: 4 / -1;
+}

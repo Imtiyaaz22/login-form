@@ -1,38 +1,48 @@
-:root {
+:root, 
+:root.light {
 	--ff-heading: "Rubik", sans-serif;
 	--ff-text: "Roboto Sans", sans-serif;
-  
+
 	--fw-heading-400: 400;
 	--fw-heading-500: 500;
 	--fw-text-300: 300;
 	--fw-text-400: 400;
 	--fw-text-500: 500;
 
+	--fs-400: 4rem;
 	--fs-300: 3rem;
 	--fs-250: 2rem;
 	--fs-200: 1.6rem;
+	--fs-150: 1.4rem;
+	--fs-100: 1.2rem;
 
-	--color-primary-light: #808F87;
-	--color-secondary-light: #F4B266;
-	--color-accent-light: #AFD0BF;
-	--color-bg-1-light: #9B7E46;
-	--color-bg-2-light: #E2EFDE;
-	--color-grey: #333;
+	--color-primary: #517664;
+	--color-secondary: #767B91;
+	--color-neutral: #D6E5E3;
+	--color-background: #CACFD6;
+	--color-text: #2D3319;
+	--color-accent: #606E80;
 
-  --color-primary-dark: #36F1CD;
-	--color-secondary-dark: #39A0ED;
-	--color-accent-dark: #13C4A3;
-	--color-bg-1-dark: #4C6085;
-	--color-bg-2-dark: #E2EFDE;
+	--border-200: .8rem;
+	--border-300: 1rem;
 
+	--spacer-80: .8rem;
+	--spacer-100: 1rem;
+	--spacer-150: 1.5rem;
+	--spacer-200: 2rem;
+	--spacer-300: 3rem;
+	--spacer-400: 4rem;
+	--spacer-500: 5rem;
+	--spacer-600: 6rem;
+}
 
-	--logo-icon: 3.5rem;
-
-	--border-sm: 1rem;
-
-	--spacer-sm: 2rem;
-	--spacer-md: 3rem;
-	--spacer-lg: 4rem;
+:root.dark {
+	--color-primary: #1C3738;
+	--color-secondary: #8BAAAD;
+	--color-neutral: #4D4847;
+	--color-background: #000F08;
+	--color-accent: #C1292E;
+	--color-text: #F4FFF8;
 }
 
 *,
@@ -46,4 +56,12 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
+}
+
+main {
+	background: var(--color-background);
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	place-items: center;
 }

@@ -1,0 +1,181 @@
+// Caption
+.caption {
+	display: grid;
+	place-content: center;
+
+	&-heading {
+		font-family: var(--ff-heading);
+		font-size: var(--fs-400);
+		font-weight: var(--fw-heading-500);
+		color: var(--color-text);
+		text-align: center;
+	}
+}
+
+// Theme
+
+// Account
+.account {
+	text-align: center;
+
+	&-heading {
+		font-family: var(--ff-heading);
+		font-size: var(--fs-300);
+		font-weight: var(--fw-heading-400);
+		color: var(--color-primary);
+	}
+
+	&-text {
+		font-family: var(--ff-text);
+		font-size: var(--fs-200);
+		font-weight: var(--fw-text-400);
+		color: var(--color-accent);
+	}
+}
+
+// Login Methods
+.login {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacer-150);
+
+	&-icon_box {
+		display: flex;
+		justify-content: center;
+		gap: var(--spacer-150);
+	}
+
+	&-icon {
+		display: block;
+		font-size: var(--fs-300);
+		color: var(--color-neutral);
+		cursor: pointer;
+		transform: scale(1);
+		transition: all 0.8s;
+
+		&:hover {
+			color: var(--color-primary);
+			transform: scale(1.1);
+		}
+	}
+
+	&-text {
+		font-family: var(--ff-text);
+		font-size: var(--fs-250);
+		color: var(--color-secondary);
+		position: relative;
+
+		&::before,
+		&::after {
+			content: " ";
+			display: block;
+			width: 50%;
+			height: 0.2rem;
+			background: currentColor;
+			position: absolute;
+		}
+
+		&::before {
+			top: 50%;
+			left: 0;
+			transform: translate(-110%, 50%);
+		}
+
+		&::after {
+			top: 50%;
+			left: 0;
+			transform: translate(210%, 50%);
+		}
+	}
+}
+
+// Login Form
+.form {
+	&-input_box {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacer-150);
+	}
+
+	&-input__label {
+		font-family: var(--ff-heading);
+		font-size: var(--fs-200);
+		color: var(--color-text);
+	}
+
+	&-input {
+		display: block;
+		margin-top: var(--spacer-80);
+		padding: var(--spacer-80) var(--spacer-600) var(--spacer-80) var(--spacer-150);
+		border: none;
+		border-radius: var(--border-200);
+		background: var(--color-neutral);
+		font-family: var(--ff-text);
+		font-size: var(--fs-200);
+		color: var(--color-primary);
+
+		&::placeholder {
+			color: var(--color-secondary);
+		}
+
+		&:focus-within {
+			outline: 2px solid var(--color-secondary);
+		}
+	}
+
+	&-btn {
+		width: 100%;
+		border: none;
+		background: var(--color-secondary);
+		font-family: var(--ff-heading);
+		font-size: var(--fs-200);
+		color: var(--color-neutral);
+		padding-block: var(--spacer-150);
+		border-radius: var(--border-200);
+		cursor: pointer;
+		transition: all .8s;
+
+		&:hover {
+			background: var(--color-primary);
+		}
+	}
+}
+
+.user {
+	margin-block: var(--spacer-150) var(--spacer-200);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: var(--spacer-200);
+
+	&-info {
+		display: flex;
+		gap: var(--spacer-80);
+
+		&__text {
+			font-family: var(--ff-text);
+			font-size: var(--fs-100);
+			color: var(--color-text);
+		}
+	}
+
+	&-link {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			font-size: var(--fs-100);
+			color: var(--color-text);
+			transition: all .5s;
+		}
+
+		&:hover,
+		&:active {
+			color: var(--color-primary);
+		}
+
+		&__text {
+			font-family: var(--ff-text);
+			font-size: var(--fs-100);
+		}
+	}
+}
