@@ -73,6 +73,55 @@ main {
   text-align: center;
 }
 
+.theme {
+  --_gap: 4rem;
+  --_timer: 1.5s;
+  display: flex;
+  align-items: center;
+  gap: var(--spacer-200);
+}
+.theme-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.theme-icon__light {
+  color: var(--color-primary);
+}
+.theme-icon__dark {
+  color: var(--color-accent);
+}
+.theme-box {
+  height: 4rem;
+  width: 8rem;
+  background-color: var(--color-neutral);
+  border-radius: 100rem;
+  border: 2px solid var(--color-accent);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--_timer);
+}
+.theme-check {
+  appearance: none;
+}
+.theme-check:checked ~ .theme-checkbox {
+  left: calc(100% - var(--_gap));
+}
+.theme-checkbox {
+  position: absolute;
+  left: 0;
+  background: var(--color-primary);
+  height: var(--_gap);
+  width: var(--_gap);
+  border-radius: 100%;
+  border: none;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.2);
+  transition: all var(--_timer);
+}
+
 .account {
   text-align: center;
 }
@@ -195,6 +244,9 @@ main {
   font-size: var(--fs-100);
   color: var(--color-text);
 }
+.user-info__check {
+  cursor: pointer;
+}
 .user-link:link, .user-link:visited {
   text-decoration: none;
   font-size: var(--fs-100);
@@ -231,7 +283,7 @@ main {
   border-radius: var(--border-300);
   display: grid;
   grid-template-columns: 6rem auto 6rem;
-  grid-template-rows: 5rem 12rem 8rem 1fr;
+  grid-template-rows: 10rem 12rem 8rem 1fr;
   justify-items: center;
   align-items: center;
 }
