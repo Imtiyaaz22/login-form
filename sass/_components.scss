@@ -7,7 +7,7 @@
 		font-family: var(--ff-heading);
 		font-size: var(--fs-400);
 		font-weight: var(--fw-heading-500);
-		color: var(--color-text);
+		color: var(--color-primary);
 		text-align: center;
 	}
 }
@@ -15,7 +15,7 @@
 // Theme
 .theme {
 	--_gap: 4rem;
-	--_timer: 1.5s;
+	--_timer: 1s;
 
 	display: flex;
 	align-items: center;
@@ -30,14 +30,14 @@
 		}
 
 		&__dark {
-			color: var(--color-accent);
+			color: var(--color-text);
 		}
 	}
 
 	&-box {
 		height: 4rem;
 		width: 8rem;
-		background-color: var(--color-neutral);
+		background-color: var(--color-background);
 		border-radius: 100rem;
 		border: 2px solid var(--color-accent);
 		cursor: pointer;
@@ -78,7 +78,7 @@
 		font-family: var(--ff-heading);
 		font-size: var(--fs-300);
 		font-weight: var(--fw-heading-400);
-		color: var(--color-primary);
+		color: var(--color-secondary);
 	}
 
 	&-text {
@@ -104,7 +104,7 @@
 	&-icon {
 		display: block;
 		font-size: var(--fs-300);
-		color: var(--color-neutral);
+		color: var(--color-background);
 		cursor: pointer;
 		transform: scale(1);
 		transition: all 0.8s;
@@ -118,7 +118,7 @@
 	&-text {
 		font-family: var(--ff-text);
 		font-size: var(--fs-250);
-		color: var(--color-secondary);
+		color: var(--color-text);
 		position: relative;
 
 		&::before,
@@ -165,17 +165,17 @@
 		padding: var(--spacer-80) var(--spacer-600) var(--spacer-80) var(--spacer-150);
 		border: none;
 		border-radius: var(--border-200);
-		background: var(--color-neutral);
+		background: var(--color-background);
 		font-family: var(--ff-text);
 		font-size: var(--fs-200);
 		color: var(--color-primary);
 
 		&::placeholder {
-			color: var(--color-secondary);
+			color: var(--color-primary);
 		}
 
 		&:focus-within {
-			outline: 2px solid var(--color-secondary);
+			outline: 2px solid var(--color-primary);
 		}
 	}
 
@@ -185,7 +185,7 @@
 		background: var(--color-secondary);
 		font-family: var(--ff-heading);
 		font-size: var(--fs-200);
-		color: var(--color-neutral);
+		color: var(--color-background);
 		padding-block: var(--spacer-150);
 		border-radius: var(--border-200);
 		cursor: pointer;
@@ -230,7 +230,7 @@
 
 		&:hover,
 		&:active {
-			color: var(--color-primary);
+			color: var(--color-secondary);
 		}
 
 		&__text {

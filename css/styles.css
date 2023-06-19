@@ -13,12 +13,12 @@
   --fs-200: 1.6rem;
   --fs-150: 1.4rem;
   --fs-100: 1.2rem;
-  --color-primary: #517664;
-  --color-secondary: #767B91;
-  --color-neutral: #D6E5E3;
-  --color-background: #CACFD6;
-  --color-text: #2D3319;
-  --color-accent: #606E80;
+  --color-primary: #A99985;
+  --color-secondary: #70798C;
+  --color-neutral: #DAD2BC;
+  --color-background: #F5F1ED;
+  --color-text: #696363;
+  --color-accent: #B3B5BD;
   --border-200: .8rem;
   --border-300: 1rem;
   --spacer-80: .8rem;
@@ -32,12 +32,12 @@
 }
 
 :root.dark {
-  --color-primary: #1C3738;
-  --color-secondary: #8BAAAD;
-  --color-neutral: #4D4847;
-  --color-background: #000F08;
-  --color-accent: #C1292E;
-  --color-text: #F4FFF8;
+  --color-primary: #85E7C0;
+  --color-secondary: #C0CCD8;
+  --color-neutral: #1B3933;
+  --color-background: #35605A;
+  --color-text: #D8E4FF;
+  --color-accent: #AFE6E0;
 }
 
 *,
@@ -54,7 +54,7 @@ html {
 }
 
 main {
-  background: var(--color-background);
+  background: var(--color-neutral);
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -69,13 +69,13 @@ main {
   font-family: var(--ff-heading);
   font-size: var(--fs-400);
   font-weight: var(--fw-heading-500);
-  color: var(--color-text);
+  color: var(--color-primary);
   text-align: center;
 }
 
 .theme {
   --_gap: 4rem;
-  --_timer: 1.5s;
+  --_timer: 1s;
   display: flex;
   align-items: center;
   gap: var(--spacer-200);
@@ -88,12 +88,12 @@ main {
   color: var(--color-primary);
 }
 .theme-icon__dark {
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 .theme-box {
   height: 4rem;
   width: 8rem;
-  background-color: var(--color-neutral);
+  background-color: var(--color-background);
   border-radius: 100rem;
   border: 2px solid var(--color-accent);
   cursor: pointer;
@@ -129,7 +129,7 @@ main {
   font-family: var(--ff-heading);
   font-size: var(--fs-300);
   font-weight: var(--fw-heading-400);
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 .account-text {
   font-family: var(--ff-text);
@@ -151,7 +151,7 @@ main {
 .login-icon {
   display: block;
   font-size: var(--fs-300);
-  color: var(--color-neutral);
+  color: var(--color-background);
   cursor: pointer;
   transform: scale(1);
   transition: all 0.8s;
@@ -163,7 +163,7 @@ main {
 .login-text {
   font-family: var(--ff-text);
   font-size: var(--fs-250);
-  color: var(--color-secondary);
+  color: var(--color-text);
   position: relative;
 }
 .login-text::before, .login-text::after {
@@ -201,16 +201,16 @@ main {
   padding: var(--spacer-80) var(--spacer-600) var(--spacer-80) var(--spacer-150);
   border: none;
   border-radius: var(--border-200);
-  background: var(--color-neutral);
+  background: var(--color-background);
   font-family: var(--ff-text);
   font-size: var(--fs-200);
   color: var(--color-primary);
 }
 .form-input::placeholder {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 .form-input:focus-within {
-  outline: 2px solid var(--color-secondary);
+  outline: 2px solid var(--color-primary);
 }
 .form-btn {
   width: 100%;
@@ -218,7 +218,7 @@ main {
   background: var(--color-secondary);
   font-family: var(--ff-heading);
   font-size: var(--fs-200);
-  color: var(--color-neutral);
+  color: var(--color-background);
   padding-block: var(--spacer-150);
   border-radius: var(--border-200);
   cursor: pointer;
@@ -254,7 +254,7 @@ main {
   transition: all 0.5s;
 }
 .user-link:hover, .user-link:active {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 .user-link__text {
   font-family: var(--ff-text);
@@ -262,7 +262,7 @@ main {
 }
 
 .wrapper {
-  background: var(--color-neutral);
+  background: var(--color-background);
   height: 80vh;
   width: 80vw;
   display: flex;
@@ -279,7 +279,7 @@ main {
 .details {
   width: 65%;
   height: 95%;
-  background: var(--color-background);
+  background: var(--color-neutral);
   border-radius: var(--border-300);
   display: grid;
   grid-template-columns: 6rem auto 6rem;

@@ -1,5 +1,5 @@
 .wrapper {
-	background: var(--color-neutral);
+	background: var(--color-background);
 	height: 80vh;
 	width: 80vw;
 	display: flex;
@@ -16,7 +16,7 @@
 .details {
 	width: 65%;
 	height: 95%;
-	background: var(--color-background);
+	background: var(--color-neutral);
 	border-radius: var(--border-300);
 	display: grid;
 	grid-template-columns: 6rem auto 6rem;
